@@ -3,6 +3,7 @@ local options = {
     lua = { "stylua" },
     c = { "clang-format" },
     cpp = { "clang-format" },
+    python = { "yapf" },
   },
 
   format_on_save = {
