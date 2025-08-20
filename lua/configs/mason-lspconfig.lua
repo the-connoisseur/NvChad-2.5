@@ -1,3 +1,5 @@
+local servers = require("configs.lspconfig")
+
 -- List of servers to ignore during install
 local ignore_install = {}
 
@@ -14,9 +16,9 @@ end
 -- Build a list of lsp servers to install minus the ignored list.
 -- Add "lua_ls" manually since that's set up under the hood in NvChad.
 local all_servers = { "lua_ls" }
-for _, s in ipairs(vim.lsp.get_clients()) do
-  if not table_contains(ignore_install, s.name) then
-    table.insert(all_servers, s.name)
+for _, s in ipairs(servers) do
+  if not table_contains(ignore_install, s) then
+    table.insert(all_servers, s)
   end
 end
 
