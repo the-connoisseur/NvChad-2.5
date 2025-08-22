@@ -1,7 +1,9 @@
 local servers = require("configs.lspconfig")
 
--- List of servers to ignore during install
-local ignore_install = {}
+-- List of servers to ignore during install.
+local ignore_install = {
+  "rust_analyzer",
+}
 
 -- Helper function to find if value is in table.
 local function table_contains(table, value)
