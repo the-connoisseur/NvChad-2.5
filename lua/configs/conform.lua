@@ -4,6 +4,7 @@ local options = {
     c = { "clang-format" },
     cpp = { "clang-format" },
     python = { "yapf" },
+    rust = { "rustfmt" },
   },
 
   format_on_save = {
