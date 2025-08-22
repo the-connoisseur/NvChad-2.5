@@ -1,10 +1,14 @@
 local options = {
   ensure_installed = {
     "bash",
+    "c",
+    "cpp",
     "lua",
     "luadoc",
     "markdown",
     "printf",
+    "python",
+    "rust",
     "toml",
     "vim",
     "vimdoc",
